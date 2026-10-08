@@ -56,4 +56,11 @@ class LoginPageTest extends BaseWebTest {
     void utcEmailLoginLinkTargetsGoogleOAuth() {
         assertThat(loginPage.getUtcEmailLoginUrl()).startsWith("https://accounts.google.com/");
     }
+
+    @Test
+    @DisplayName("TC_LOGIN_07 - Checkbox giữ đăng nhập hiển thị và bật")
+    void rememberMeCheckboxIsVisibleAndEnabled() {
+        assertThat(loginPage.getRememberMeLabel().isDisplayed()).isTrue();
+        assertThat(loginPage.getRememberMeCheckbox().isEnabled()).isTrue();
+    }
 }

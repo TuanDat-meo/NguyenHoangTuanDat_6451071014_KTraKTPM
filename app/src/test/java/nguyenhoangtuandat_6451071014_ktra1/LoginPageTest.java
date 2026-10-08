@@ -50,4 +50,10 @@ class LoginPageTest extends BaseWebTest {
 
         assertThat(loginPage.getCurrentUrl()).contains("/Login/GetPass");
     }
+
+    @Test
+    @DisplayName("TC_LOGIN_06 - Liên kết e-mail UTC trỏ tới Google OAuth")
+    void utcEmailLoginLinkTargetsGoogleOAuth() {
+        assertThat(loginPage.getUtcEmailLoginUrl()).startsWith("https://accounts.google.com/");
+    }
 }

@@ -63,4 +63,14 @@ class LoginPageTest extends BaseWebTest {
         assertThat(loginPage.getRememberMeLabel().isDisplayed()).isTrue();
         assertThat(loginPage.getRememberMeCheckbox().isEnabled()).isTrue();
     }
+
+    @Test
+    @DisplayName("TC_LOGIN_08 - Có thể bật checkbox giữ đăng nhập")
+    void rememberMeCheckboxCanBeSelected() {
+        var checkbox = loginPage.getRememberMeCheckbox();
+
+        assertThat(checkbox.isSelected()).isFalse();
+        loginPage.getRememberMeLabel().click();
+        assertThat(checkbox.isSelected()).isTrue();
+    }
 }

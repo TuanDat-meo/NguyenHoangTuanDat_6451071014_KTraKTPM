@@ -1,0 +1,2 @@
+ID;Tên testcase;Tiền điều kiện;Các bước;Dữ liệu;Kết quả mong đợi;Tự động hóa
+TC_LOGIN_01;Mở trang đăng nhập;Có Internet và Chrome;Truy cập URL trang đăng nhập;Không cần;URL thuộc /Login và tiêu đề là Đăng nhập;Có

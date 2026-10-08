@@ -42,4 +42,12 @@ class LoginPageTest extends BaseWebTest {
         assertThat(loginPage.getSubmitButton().isDisplayed()).isTrue();
         assertThat(loginPage.getSubmitButton().isEnabled()).isTrue();
     }
+
+    @Test
+    @DisplayName("TC_LOGIN_05 - Mở trang quên mật khẩu")
+    void forgotPasswordLinkOpensRecoveryPage() {
+        loginPage.openForgotPasswordPage();
+
+        assertThat(loginPage.getCurrentUrl()).contains("/Login/GetPass");
+    }
 }

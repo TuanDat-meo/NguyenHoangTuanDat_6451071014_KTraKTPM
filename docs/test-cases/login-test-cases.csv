@@ -3,3 +3,4 @@ TC_LOGIN_01;Mở trang đăng nhập;Có Internet và Chrome;Truy cập URL tran
 TC_LOGIN_02;Ô tên đăng nhập hiển thị và bật;Trang đăng nhập truy cập được;Mở trang và kiểm tra ô tên đăng nhập;Không cần;Ô tên đăng nhập hiển thị và cho phép nhập;Có
 TC_LOGIN_03;Ô mật khẩu được che;Trang đăng nhập truy cập được;Mở trang và kiểm tra thuộc tính type của ô mật khẩu;Không cần;Ô mật khẩu hiển thị với type=password;Có
 TC_LOGIN_04;Nút đăng nhập hiển thị;Trang đăng nhập truy cập được;Mở trang và kiểm tra nút Đăng nhập;Không cần;Nút hiển thị và được bật;Có
+TC_LOGIN_05;Mở trang quên mật khẩu;Trang đăng nhập truy cập được;Nhấn liên kết Bạn quên mật khẩu đăng nhập;Không cần;Điều hướng đến URL /Login/GetPass;Có

@@ -21,4 +21,11 @@ class LoginPageTest extends BaseWebTest {
         assertThat(loginPage.getCurrentUrl()).contains("/Login");
         assertThat(loginPage.getTitle()).contains("Đăng nhập");
     }
+
+    @Test
+    @DisplayName("TC_LOGIN_02 - Ô tên đăng nhập hiển thị và bật")
+    void usernameFieldIsVisibleAndEnabled() {
+        assertThat(loginPage.getUsernameField().isDisplayed()).isTrue();
+        assertThat(loginPage.getUsernameField().isEnabled()).isTrue();
+    }
 }

@@ -28,4 +28,11 @@ class LoginPageTest extends BaseWebTest {
         assertThat(loginPage.getUsernameField().isDisplayed()).isTrue();
         assertThat(loginPage.getUsernameField().isEnabled()).isTrue();
     }
+
+    @Test
+    @DisplayName("TC_LOGIN_03 - Ô mật khẩu được che")
+    void passwordFieldIsVisibleAndMasked() {
+        assertThat(loginPage.getPasswordField().isDisplayed()).isTrue();
+        assertThat(loginPage.getPasswordField().getAttribute("type")).isEqualTo("password");
+    }
 }

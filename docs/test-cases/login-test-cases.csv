@@ -1,3 +1,4 @@
 ID;Tên testcase;Tiền điều kiện;Các bước;Dữ liệu;Kết quả mong đợi;Tự động hóa
 TC_LOGIN_01;Mở trang đăng nhập;Có Internet và Chrome;Truy cập URL trang đăng nhập;Không cần;URL thuộc /Login và tiêu đề là Đăng nhập;Có
 TC_LOGIN_02;Ô tên đăng nhập hiển thị và bật;Trang đăng nhập truy cập được;Mở trang và kiểm tra ô tên đăng nhập;Không cần;Ô tên đăng nhập hiển thị và cho phép nhập;Có
+TC_LOGIN_03;Ô mật khẩu được che;Trang đăng nhập truy cập được;Mở trang và kiểm tra thuộc tính type của ô mật khẩu;Không cần;Ô mật khẩu hiển thị với type=password;Có

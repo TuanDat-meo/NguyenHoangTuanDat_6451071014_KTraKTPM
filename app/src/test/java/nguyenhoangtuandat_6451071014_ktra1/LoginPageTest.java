@@ -35,4 +35,11 @@ class LoginPageTest extends BaseWebTest {
         assertThat(loginPage.getPasswordField().isDisplayed()).isTrue();
         assertThat(loginPage.getPasswordField().getAttribute("type")).isEqualTo("password");
     }
+
+    @Test
+    @DisplayName("TC_LOGIN_04 - Nút đăng nhập hiển thị và bật")
+    void submitButtonIsVisibleAndEnabled() {
+        assertThat(loginPage.getSubmitButton().isDisplayed()).isTrue();
+        assertThat(loginPage.getSubmitButton().isEnabled()).isTrue();
+    }
 }
